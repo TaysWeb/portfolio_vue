@@ -1,8 +1,9 @@
-<template>
-<div style=" background-color: #8899bc;">
+<template >
+ 
+<div class="color-change-5x" >
 
 <div class="container p-0">
-            <nav class="navbar navbar-expand-md ">
+            <nav class="navbar navbar-expand-md  animate__animated animate__fadeInRight">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <img src="https://i.postimg.cc/dtNL9m6S/tara-port-logo.png" width="200" class="img-fluid">
@@ -18,7 +19,7 @@
                         <router-link to="/" class="nav-link  fw-medium">Home</router-link>
                       </li>
                       <li class="nav-item">
-                     <router-link to="/" class="nav-link  fw-medium">About Me</router-link>
+                     <router-link to="/about" class="nav-link  fw-medium">About Me</router-link>
                       </li>
                       <li class="nav-item">
                          <router-link to="/" class="nav-link  fw-medium">Qualifications</router-link>
@@ -39,6 +40,7 @@
             </nav>
  </div> 
 </div>
+
 </template>
 <script>
 export default {
@@ -74,13 +76,14 @@ export default {
     transition: all 0.2s;
     padding: 30px 24px 12px ; 
     border-radius: 0.7rem; 
-    background-color:#e6b3af;
+    background-color:#676464;
     position: absolute;
     bottom: 0;
     left:0;
 }
  .nav-link:hover::after {
     opacity: 1;
+    width:100%;
   
 }
  
