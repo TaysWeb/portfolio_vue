@@ -5,7 +5,7 @@
      		<div  class="col-auto d-flex flex-column align-items-center gap-5 p-4" >
                <div class="row ">
       <div class="col-auto justify-content-start">
-       <font-awesome-icon :icon="['fab', 'github']" size="lg"  class="fs-1  animate__animated animate__slideInUp" style="color:#001;"/>    
+       <font-awesome-icon :icon="['fab', 'github']" size="lg"  class="fs-1  animate__animated animate__slideInUp  " style="color:#001;"/>    
       </div>
       </div>
 
@@ -56,16 +56,17 @@
      </div>
 </div>
   </header>
+  <about-me/>
 </template>
 
 <script>
-
+import aboutMe from '../components/about-comp.vue'
 
 
 export default {
   name: 'HomeView',
   components: {
-  
+      aboutMe, 
   }
 }
 </script>

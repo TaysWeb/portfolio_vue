@@ -16,7 +16,7 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <router-link to="/" class="nav-link  fw-medium">Home</router-link>
+                        <router-link to="/" class="nav-link fw-medium">Home</router-link>
                       </li>
                       <li class="nav-item">
                      <router-link to="/about" class="nav-link  fw-medium">About Me</router-link>
