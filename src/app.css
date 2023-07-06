@@ -18,3 +18,19 @@
    li {
        list-style-type: none;
    }
+ 
+  .animate__animated .animate__slideInUp {
+    --animate-duration: 10s;
+  }
+  .animate__animated .animate__fadeInRight {
+    --animate-duration: 12s;
+  }
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 700ms;
+    --animate-delay: 0.9s;
+  }
+  .color-change-5x{animation:color-change-5x 20s linear .8s infinite alternate backwards}
+
+
+@keyframes color-change-5x{0%{background:#19dcea}25%{background:#b87adb}50%{background:#c38888}75%{background:#6c685a}100%{background:#86bc76}}

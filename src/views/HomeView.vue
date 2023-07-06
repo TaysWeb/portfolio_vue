@@ -1,31 +1,31 @@
 <template>
-  <header>
+  <header class="color-change-5x">
 <div class="container my-5 gap-3" style="position:relative;">
       <div class="row row-3 gap-5">
      
      		<div  class="col-auto d-flex flex-column align-items-center gap-5 p-4" >
                <div class="row ">
       <div class="col-auto justify-content-start">
-       <font-awesome-icon :icon="['fab', 'github']" size="lg"  class="fs-1" style="color:#001;"/>    
+       <font-awesome-icon :icon="['fab', 'github']" size="lg"  class="fs-1  animate__animated animate__slideInUp" style="color:#001;"/>    
       </div>
       </div>
 
       <div class="row  ">
       <div class="col-auto justify-content-start gap-2">
    
-       <font-awesome-icon :icon="['fab', 'twitter']" size="lg" class="fs-1" style="color:#001;"/>     
+       <font-awesome-icon :icon="['fab', 'twitter']" size="lg" class="fs-1 animate__animated animate__slideInUp" style="color:#001;"/>     
       </div>
       </div>
 
       <div class="row ">
       <div class="col-auto justify-content-start">
-         <font-awesome-icon :icon="['fab', 'linkedin']"  size="lg" class="fs-1" style="color:#001;"/>   
+         <font-awesome-icon :icon="['fab', 'linkedin']"  size="lg" class="fs-1  animate__animated animate__slideInUp" style="color:#001;"/>   
       </div>
       </div>
         </div>
 
 
-    <div class="col-md-7 col-lg-6 d-flex flex-column gap-3 p-4 ">
+    <div class="col-md-7 col-lg-6 d-flex flex-column gap-3 p-4 animate__animated animate__fadeInUpBig" >
      <div class="row pt-3">
      
          <h2 class="m fs-1">Hi,</h2>
@@ -49,7 +49,7 @@
       </div>
      </div>
 
-    <div class="col d-flex flex-column align-items-center gap-3 p-4 ">
+    <div class="col d-flex flex-column align-items-center gap-3 p-4 animate__animated animate__fadeInUpBig">
     <img src="https://i.postimg.cc/DfdywVNT/vivid-designer-illustrator-girl-working-at-her-desk-on-a-tablet.png" class="img-fluid" width="350">
    	</div>
 
@@ -76,12 +76,7 @@ header {
     height:100vh;
 }  
 header font-awesome-icon {
-
-
   position: relative;
-
- 
-  
 }
 
  header font-awesome-icon::after{
@@ -103,7 +98,7 @@ header {
     background-color: #8899bc;
 }
  header button {
- background-color: #eee;
+ background-color: #eeeeee;
  border: none;
  padding: 1rem;
  font-size: 1.2rem;
