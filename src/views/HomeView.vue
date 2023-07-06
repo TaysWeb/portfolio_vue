@@ -2,7 +2,6 @@
   <header>
 <div class="container my-5 gap-3" style="position:relative;">
       <div class="row row-3 gap-5">
-     
      		<div  class="col-auto d-flex flex-column align-items-center gap-5 p-4" >
                <div class="row ">
       <div class="col-auto justify-content-start">
