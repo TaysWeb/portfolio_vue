@@ -17,6 +17,7 @@
     "core-js": "^3.8.3",
     "firebase": "^10.0.0",
     "hover.css": "^2.3.2",
+    "mdb-ui-kit": "^6.4.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"

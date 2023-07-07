@@ -71,7 +71,7 @@ export default {
 <style>
 header {
     overflow: hidden;
-    height:100vh;
+    height:80vh;
 }  
 header font-awesome-icon {
   position: relative;
