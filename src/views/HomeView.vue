@@ -60,14 +60,12 @@
 </template>
 
 <script>
-import aboutMe from '../components/about-comp.vue'
+
 
 
 export default {
   name: 'HomeView',
-  components: {
-      aboutMe, 
-  }
+
 }
 </script>
 <style>

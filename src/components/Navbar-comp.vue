@@ -22,16 +22,16 @@
                      <router-link to="/about" class="nav-link  fw-medium">About Me</router-link>
                       </li>
                       <li class="nav-item">
-                         <router-link to="/" class="nav-link  fw-medium">Qualifications</router-link>
+                         <router-link to="/resume" class="nav-link  fw-medium">Qualifications</router-link>
                       </li>
                       <li class="nav-item">
-                  <router-link to="/" class="nav-link  fw-medium">Projects</router-link>
+                  <router-link to="/projects" class="nav-link  fw-medium">Projects</router-link>
                       </li>
                       <li class="nav-item">
-                   <router-link to="/" class="nav-link fw-medium">Reviews</router-link>
+                   <router-link to="/reviews" class="nav-link fw-medium">Reviews</router-link>
                       </li>
                       <li class="nav-item">
-                       <router-link to="/" class="nav-link fw-medium">Contact Me</router-link>
+                       <router-link to="/contact" class="nav-link fw-medium">Contact Me</router-link>
                       </li>
                
                     </ul>
