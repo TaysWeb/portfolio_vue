@@ -24,7 +24,7 @@
 
                   <br>
                   <br>
-                   🙃 I'm super determined to finish any challenge any decisions that may come my way <br>
+                   🙃 I'm super determined to finish any challenge any decisions that may come my <br> way 
                       and I do not give up easily at all.
                  </p>
         </div>
