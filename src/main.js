@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './app.css'
 import 'animate.css'
+import * as mdb from 'mdb-ui-kit'; // lib
+import { Input } from 'mdb-ui-kit'; // module
+
 
 import { createApp } from 'vue'
 import App from './App.vue'

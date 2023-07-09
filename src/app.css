@@ -3,8 +3,6 @@
   * {
     box-sizing:border-box;
    }
-   
-   
    ::-webkit-scrollbar{
        display: none;
    }
@@ -18,7 +16,6 @@
    li {
        list-style-type: none;
    }
- 
   .animate__animated .animate__slideInUp {
     --animate-duration: 10s;
   }
