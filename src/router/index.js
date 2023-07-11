@@ -14,10 +14,19 @@ const routes = [
   },
   {
     path: '/resume',
-    name: 'resumeComp',
+    name: 'resume',
     component: () => import(/* webpackChunkName: "about" */ '../views/QualifView.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import(/* webpackChunkName: "about" */ '../views/contactView.vue')
+  },
+  {
+    path: '/reviews',
+    name: 'review',
+    component: () => import(/* webpackChunkName: "about" */ '../views/reviewView.vue')
   }
-
 ]
 
 const router = createRouter({

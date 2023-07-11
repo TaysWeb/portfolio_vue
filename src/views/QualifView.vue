@@ -1,4 +1,5 @@
-<template>
+ <template>
+      <div v-if="Education">
     <div class="container-fluid py-3">
 
         <div class="row justify-content-center" style="border:2px solid black">
@@ -7,39 +8,30 @@
             <h3 class="fw-bold mb-5 fs-1 text-decoration-underline">Resume <span>📌</span> </h3>
           </div>
       </div>
-      <div class="divider"></div>
-
-      <button @click="getpost">Show</button>
-      <hr>
-      <div v-for="p in post" :key="p.id" >
-          <h2>{p.id} .p.title</h2>
-      </div>
+      <div class="divider"></div>    
     </div>
-</div>  <!--end of container-->
+    <div class="row">
+      <eduComp :Education="Education"/>
+</div>
+</div> 
 
-   <resumeComp/>
+  
 <EndComp/>
+</div>
+<div v-else>Just a moment ...</div>
 </template>
 <script>
-import resumeComp from '../components/resume-comp.vue'
+import eduComp from '../components/Edu-comp.vue'
 import EndComp from '../components/footer-comp.vue'
 export default {
  
-    components : { resumeComp, EndComp},
-    data() {
-      return {
-        post:{}
-      }
-    },
-    methods: {
-      getPosts() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json())
-      .then(json =>this.post = data)
-      }
-    },
+
+    components: {
+      eduComp,EndComp,
+    }
+
 }
 </script>
 <style >
     
-</style>
+</style> 
