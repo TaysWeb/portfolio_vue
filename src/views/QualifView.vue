@@ -12,7 +12,7 @@
       <button @click="getpost">Show</button>
       <hr>
       <div v-for="p in post" :key="p.id" >
-          <h2>{p.id} .p.title</h2>
+          <h2>{{p.id}} - {{p.title}}</h2>
       </div>
     </div>
 </div>  <!--end of container-->
@@ -32,7 +32,7 @@ export default {
       }
     },
     methods: {
-      getPosts() {
+      getPost() {
         fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(json =>this.post = data)
