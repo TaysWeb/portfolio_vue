@@ -3,9 +3,9 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     Education:null ,
-    Experience :null,
+    Experience:null ,
     Projects:null,
-    Reviews:null,
+    review:null,
     Error:null
   },
  
@@ -19,8 +19,8 @@ export default createStore({
     setProjects: (state,value) => {
       state.Projects = value 
     },
-    setReviews: (state,value) => {
-      state.Reviews = value 
+    setreview: (state,value) => {
+      state.review = value 
     },
     setError: (state,value) => {
       state.Error = value 
@@ -28,35 +28,45 @@ export default createStore({
 
   },
   actions: {
-    async fetchData(context) {
-      try {
-        const response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
-        const data = await response.json()
-        context.commit('setResume', data)
-      } catch (error) {
-        context.commit('setError', error.message)
-      }
-    },
-
-    async fetchData(context) {
-      try {
-        const response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/projects.json')
-        const data = await response.json()
-        context.commit('setProjects', data)
-      } catch (error) {
-        context.commit('setError', error.message)
-      }
-    },
+    // async fetchResume(context) {
+    //   try {
+    //     const response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
+    //     const data = await response.json()
+    //     context.commit('setResume', data)
+    //   } catch (error) {
+    //     context.commit('setError', error.message)
+    //   }
+    // },
     
-    async fetchData(context) {
-      try {
-        const response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/reviews.json')
-        const data = await response.json()
-        context.commit('setReviews', data)
-      } catch (error) {
-        context.commit('setError', error.message)
-      }
-    }
+    fetchEduction  :  async (context) => {
+    
+      fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
+      .then((res) => res.json())
+      .then((Education) => context.commit("setEducation", Education));
+  
+  },
+  fetchExperience :  async (context) => {
+    
+    fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
+    .then((res) => res.json())
+    .then((Experience) => context.commit("setExperience", Experience));
+
+},
+fetchEduction  :  async (context) => {
+    
+  fetch('https://taysweb.github.io/taysweb_data.github.io/data/projets.json')
+  .then((res) => res.json())
+  .then((Projects) => context.commit("setEducation", Projects));
+
+},
+       fetchreview  :  async (context) => {
+    
+        fetch('https://taysweb.github.io/taysweb_data.github.io/data/reviews.json')
+        .then((res) => res.json())
+        .then((review) => context.commit("setreview", review));
+        // console.log(review)
+    
+    },
 
   },
 
