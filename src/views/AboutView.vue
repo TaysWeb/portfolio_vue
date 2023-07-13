@@ -40,13 +40,13 @@
 
 
  </div>
- <footerComp/>
+ <EndComp/>
 </template>
 <script>
-import footerComp from '../components/footer-comp.vue'
+import EndComp from '../components/footer-comp.vue'
  export default {
   name: 'about',
-  components :{footerComp}
+  components :{EndComp}
  }
 </script>
 <style scoped>

@@ -12,7 +12,7 @@
                     <!--<span class="navbar-toggler-icon"></span>-->
                     <i class="fas fa-bars fa-lg " style="color: #fafcff;"></i>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="collapse navbar-collapse" id="navbarNav"> 
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                       <li class="nav-item">
@@ -68,7 +68,6 @@ export default {
     position: relative;
    z-index:1;
 }
-
 .nav-link::after{
     content: '';
     z-index:-1;
@@ -83,8 +82,7 @@ export default {
 }
  .nav-link:hover::after {
     opacity: 1;
-    width:100%;
-  
+    width:100%; 
 }
  
 </style>
