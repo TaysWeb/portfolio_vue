@@ -2,8 +2,8 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    Education:null ,
-    Experience:null ,
+    education:null ,
+    experience:null ,
     Projects:null,
     review:null,
     Error:null
@@ -11,10 +11,10 @@ export default createStore({
  
   mutations: {
     setEducation: (state,value) => {
-      state.Education = value 
+      state.education = value 
     },
     setExperience: (state,value) => {
-      state.Experience = value 
+      state.experience = value 
     },
     setProjects: (state,value) => {
       state.Projects = value 
@@ -28,31 +28,27 @@ export default createStore({
 
   },
   actions: {
-    // async fetchResume(context) {
-    //   try {
-    //     const response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
-    //     const data = await response.json()
-    //     context.commit('setResume', data)
-    //   } catch (error) {
-    //     context.commit('setError', error.message)
-    //   }
-    // },
-    
-    fetchEduction  :  async (context) => {
-    
-      fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
-      .then((res) => res.json())
-      .then((Education) => context.commit("setEducation", Education));
-  
-  },
-  fetchExperience :  async (context) => {
-    
-    fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
-    .then((res) => res.json())
-    .then((Experience) => context.commit("setExperience", Experience));
-
-},
-fetchEduction  :  async (context) => {
+    async fetchEducation(context) {
+      try {
+        let response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
+        let {education} = await response.json()
+        context.commit('setEducation', education)
+   
+      } catch (error) {
+        context.commit('setError', error.message)
+      }
+    },
+    async fetchExperience(context) {
+      try {
+        let response = await fetch('https://taysweb.github.io/taysweb_data.github.io/data/resume.json')
+        let {experience} = await response.json()
+        context.commit('setExperience', experience)
+      } catch (error) {
+        context.commit('setError', error.message)
+      }
+    },
+ 
+fetchProjects:  async (context) => {
     
   fetch('https://taysweb.github.io/taysweb_data.github.io/data/projets.json')
   .then((res) => res.json())
@@ -60,7 +56,6 @@ fetchEduction  :  async (context) => {
 
 },
        fetchreview  :  async (context) => {
-    
         fetch('https://taysweb.github.io/taysweb_data.github.io/data/reviews.json')
         .then((res) => res.json())
         .then((review) => context.commit("setreview", review));
