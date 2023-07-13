@@ -4,7 +4,7 @@ export default createStore({
   state: {
     education:null ,
     experience:null ,
-    Projects:null,
+    projects:null,
     review:null,
     Error:null
   },
@@ -17,7 +17,7 @@ export default createStore({
       state.experience = value 
     },
     setProjects: (state,value) => {
-      state.Projects = value 
+      state.projects = value 
     },
     setreview: (state,value) => {
       state.review = value 
@@ -48,11 +48,10 @@ export default createStore({
       }
     },
  
-fetchProjects:  async (context) => {
-    
-  fetch('https://taysweb.github.io/taysweb_data.github.io/data/projets.json')
+fetchProjects:  async (context) => {   
+  fetch('https://taysweb.github.io/taysweb_data.github.io/data/projects.json')
   .then((res) => res.json())
-  .then((Projects) => context.commit("setEducation", Projects));
+  .then((projects) => context.commit("setProjects", projects));
 
 },
        fetchreview  :  async (context) => {
