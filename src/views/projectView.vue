@@ -7,12 +7,11 @@
           <div class="section-title text-center">
             <h3 class="fw-bold mb-5 fs-1 text-decoration-underline"> My Projects<span>🧠</span> </h3>
           </div>
-      </div>
-    
+      </div> 
     </div> 
 
-    <div class="row  g-2 gap-5">
-        <div class="col-md-6">
+    <div class="row justify-content-md-center py-4">
+        <div class="col-md-6 g-5">
         <div v-if="projects">
       <projComp :projects= "projects"/>
     </div>
@@ -47,5 +46,5 @@ export default {
 }
 </script>
 <style >
-    
+   
 </style>
