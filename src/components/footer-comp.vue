@@ -1,11 +1,11 @@
 <template >
-        <footer class="footer color-change-5x">
+        <div class="footer color-change-5x">
         <div class="credit fs-3"> ©️ 2023 credit by <span>tara</span> | all Rights Reserved</div>
-      </footer>
+      </div>
 </template>
 <script>
 export default {
-    name : 'footer',
+    name : 'End',
    
 }
 </script>
@@ -27,5 +27,4 @@ export default {
     font-style: italic;
 }
 
-/*-------------------End of Footer------------------------*/
 </style>

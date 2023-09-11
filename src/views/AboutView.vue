@@ -1,4 +1,5 @@
 <template>
+  <navComp/>
  <div class="container-lg py-4">
    <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -22,8 +23,8 @@
        </div>
        <div class="col-md-6 mt-3 align-self-center gap-4" >
              <p class="text-center fs-4">
-                 🦋 I'm a 19 year old UI/UX Designer. Resides in Cape Town born and raised.
-                 called M/plain which  <br> i stayed all my life. I'm more of a back end developer.🎵
+                 🦋 I'm a 19 year old UI/UX Designer. Who Resides in Cape Town. 
+                   Junior FULL-STACK Developer .  I'm more of a back end developer.🎵
                   <br>
                   <br>
                    🙃 I'm super determined to finish any challenge any decisions that may come my way <br>
@@ -32,21 +33,24 @@
      
         
         
+
             <button  href="../views/Resume.vue" class="mt-4 fs-5 mx-2">Checkout Resume
               <span></span>
-             </button>
+
+
         </div>
           </div>
 
 
  </div>
- <footerComp/>
+ <EndComp/>
 </template>
 <script>
-import footerComp from '../components/footer-comp.vue'
+import navComp from '../components/Navbar-comp.vue'
+import EndComp from '../components/footer-comp.vue'
  export default {
   name: 'about',
-  components :{footerComp}
+  components :{EndComp,navComp}
  }
 </script>
 <style scoped>
