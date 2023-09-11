@@ -7,7 +7,7 @@
       <h5 class="card-title fs-3 text-decoration-underline">{{ pro.name }}</h5>
       <p class="card-text"> </p>
       <h4>Languages Used : {{ pro.tools_used }}</h4>
-      <button type="button" href="https://github.com/TaysWeb" class="btn btn-success">Github Link </button>
+     <a :href="pro.repo_link"> <button type="button"  class="btn btn-success">Github Link </button></a>
     </div>
     <div class="card-footer">
       <small class="text-body-secondary">{{ pro.date }}</small>
