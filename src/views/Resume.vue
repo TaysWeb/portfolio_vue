@@ -1,5 +1,5 @@
  <template>
-     
+     <NavbarComp/>
    <div class="container-fluid">
 
         <div class="row justify-content-center py-2 mt-2" >
@@ -50,13 +50,14 @@
 
 </template>
 <script>
+import NavbarComp from '@/components/Navbar-comp.vue'
 import eduComp from '../components/Edu-comp.vue'
 import expComp from '../components/exp-Comp.vue'
 import EndComp from '../components/footer-comp.vue'
 export default {
 
     components: {
-      eduComp,EndComp,expComp,
+      NavbarComp, eduComp,EndComp,expComp,
     },
     
     computed: {
