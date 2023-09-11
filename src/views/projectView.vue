@@ -1,5 +1,5 @@
 <template >
-
+   <NavbarComp/>
   <div class="container py-3">
     
     <div class="row justify-content-center py-2 mt-2" >
@@ -10,29 +10,26 @@
       </div> 
     </div> 
 
-    <div class="row justify-content-md-center py-4">
-        <div class="col-md-6 g-5">
+    <div class="row justify-content-md-center py-3 g-3">
+      
         <div v-if="projects">
       <projComp :projects= "projects"/>
     </div>
     <div v-else>Just a moment ...</div>
-    </div>
-    <!-- <div class="col-md-6">
-        <div v-if="projects">
-      <projComp :projects= "projects"/>
-    </div>
-    <div v-else>Just a moment ...</div>
-    </div> -->
+
+   
 </div>
 
   </div>
-    
+    <footerComp/>
 
 </template>
 <script>
-import projComp from '../components/proj-comp.vue'
+import NavbarComp from '@/components/Navbar-comp.vue';
+import projComp from '../components/proj-comp.vue';
+import footerComp from '@/components/footer-comp.vue';
 export default {
-    components:{projComp},
+    components:{NavbarComp,projComp, footerComp},
     computed: {
       projects() {
             return this.$store.state.projects
