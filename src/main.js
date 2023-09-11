@@ -21,16 +21,16 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import {  faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-
+import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 /* add each imported icon to the library */
 library.add(faCheckCircle ,faLinkedin, faFacebook,faGithub,faTwitter)
 
 
+
 createApp(App).use(store).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
 
 import 'bootstrap/dist/js/bootstrap.js'
-import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 

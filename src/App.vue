@@ -1,12 +1,10 @@
 <template>
-  <navbarComp/>
+
   <router-view/>
 </template>
 <script>
-import navbarComp from './components/Navbar-comp';
-export default {
-   components:{navbarComp}
-}
+
+
 
 </script>
 <style>
@@ -17,6 +15,16 @@ export default {
   text-align: center;
 
 }
-
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: scroll;
+} 
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+  overflow-x: hidden;
+} 
 </style>

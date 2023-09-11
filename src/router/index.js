@@ -15,7 +15,7 @@ const routes = [
   {
     path: '/resume',
     name: 'resume',
-    component: () => import(/* webpackChunkName: "about" */ '../views/QualifView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
   },
   {
     path: '/contact',

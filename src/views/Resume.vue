@@ -39,10 +39,10 @@
 
 <div class="row justify-content-center py-2" >
       <div class="col-md-6 mb-3">
-    <button to="/src/views">Check Out My Work !</button>
+    <button to="/src/views/projectView.vue">Check Out My Work !</button>
 </div>
 </div>
-
+</div>
 </div>  <!--end of container-->
 
 <EndComp/>
@@ -76,7 +76,7 @@ export default {
   
 
 
->>>>>>> 472fb45246979c96f11dd32ec5c0c2daa628823e
+
 }
 </script>
 <style scoped>
