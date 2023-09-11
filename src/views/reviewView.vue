@@ -1,4 +1,5 @@
 <template >
+    <NavbarComp/>
     <div class="container py-3">
 
         <div class="row justify-content-center py-2 mt-2" >
@@ -19,10 +20,11 @@
 <EndComp/>
 </template>
 <script>
+import NavbarComp from '@/components/Navbar-comp.vue'
 import reviewComp from '../components/Review-comp.vue'
 import EndComp from '../components/footer-comp.vue'
 export default {
-    components :{ reviewComp, EndComp },
+    components :{ NavbarComp,reviewComp, EndComp },
 
     computed: {
         review() {
