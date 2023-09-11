@@ -33,9 +33,11 @@
      
         
         
-            <button  href= "../views/Resume.vue" class="mt-4 fs-5 mx-2">Checkout Resume
-         
-             </button>
+
+            <button  href="../views/Resume.vue" class="mt-4 fs-5 mx-2">Checkout Resume
+              <span></span>
+
+
         </div>
           </div>
 
